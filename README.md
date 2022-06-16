@@ -7,10 +7,10 @@
 		<img src="https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter" alt="follow on Twitter">
 	</a>
 	<a href="#">
-		<img src="https://img.shields.io/github/license/eoscostarica/guias.eoscostarica.io" alt="MIT">
+		<img src="https://img.shields.io/github/license/eoscostarica/eden-delegates-msig" alt="MIT">
 	</a>
 	<a href="#">
-    <img src="https://img.shields.io/github/forks/eoscostarica/guias.eoscostarica.io?style=social" alt="Forks">
+    <img src="https://img.shields.io/github/forks/eoscostarica/eden-delegates-msig?style=social" alt="Forks">
     </a>
 </p>
 
