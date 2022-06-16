@@ -1,4 +1,4 @@
-# Multi-Sig Proposal for Updating Elected Eden Delegate's Active Permissions 
+# Multi-Sig Proposal to set Eden Delegate's Permissions 
 <p align="center">
 	<a href="https://git.io/col">
 		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
