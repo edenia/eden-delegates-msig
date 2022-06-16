@@ -1,0 +1,53 @@
+{
+	"account": "genesis.eden",
+	"permission": "active",
+	"parent": "owner",
+	"auth": {
+		"threshold": 2,
+		"keys": [],
+		"accounts": [{
+				"permission": {
+					"actor": "brockpierce1",
+					"permission": "active"
+				},
+				"weight": 1
+			},
+			{
+				"permission": {
+					"actor": "bywire.com",
+					"permission": "active"
+				},
+				"weight": 1
+			},
+			{
+				"permission": {
+					"actor": "chkmacdonald",
+					"permission": "active"
+				},
+				"weight": 1
+			},
+			{
+				"permission": {
+					"actor": "costaricamae",
+					"permission": "active"
+				},
+				"weight": 1
+			},
+			{
+				"permission": {
+					"actor": "gracielau.gm",
+					"permission": "active"
+				},
+				"weight": 1
+			},
+			{
+				"permission": {
+					"actor": "genesis.eden",
+					"permission": "eosio.code"
+				},
+				"weight": 2
+			}
+		],
+		"waits": []
+	}
+}
