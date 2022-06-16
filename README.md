@@ -15,15 +15,15 @@
 </p>
 
 ## Description
-A shell script utility to update the active permissions for the `eden.genesis` account with newly elected delegates accounts.
+A shell script utility to update the **active** permissions for the `eden.genesis` account with newly elected delegates accounts.
 
 ## Quick Start
 - Install pre-requisites
 - Clone repository
 - Update `current-eden-delegates.json` with current delegate's accounts.
 - Update `new-delegates.json` with newly elected delegate's accounts.
+- Import and Unlock `cleos` wallet with proposer account keys.
 - Execute `./update-delegates.sh` and enter the account proposing and proposal name.
-- Confirm the proposal.
 - Execute `./token-transfer.sh` *(still not sure how this part works)*
 
 ### Pre-Requisites
