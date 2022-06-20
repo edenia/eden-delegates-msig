@@ -1,0 +1,6 @@
+{
+    "from": "eosio.grants",
+    "to": "genesis.eden",
+    "quantity": "10.0000 EOS",
+    "memo": "Welcome New Eden Delegates!"
+}

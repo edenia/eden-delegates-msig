@@ -13,9 +13,28 @@ echo ""
 # Confirm transaction details:
 read -p "You ($PROPOSER) are creating a proposal called $PROPOSAL to udpate genesis.eden active permisions - if correct press enter. "
 
+# Make temp dir for storing files
+  mkdir -p ./tmp
+  TEMP_DIR=./tmp
+
 # Propose MSIG
-cleos -u $API multisig propose $PROPOSAL current-eden-delegates.json -x "3600" \
+echo 'creating updateauth action...'
+cleos -u $API multisig propose $PROPOSAL current-eden-delegates.json -x "3600" -s -d -j \
 '[
     {"actor": "geneis.eden", "permission": "active"}
 ]' \
-eosio updateauth new-delegates.json -p $PROPOSER
+eosio updateauth new-delegates.json -s -d -j -p $PROPOSER > $TEMP_DIR/permissions.json
+
+# Create token transfer action
+echo 'create token transfer action...'
+cleos -u $API push action eosio.token transfer token-transfer.json -s -d -j > $TEMP_DIR/token-transfer.json
+
+# Merge permissions and token transfer actions into a single transaction
+echo 'meging actions...'
+jq -s '[.[].actions[]]' $TEMP_DIR/token-transfer.json $TEMP_DIR/permissions.json >$TEMP_DIR/proposal-actions.json
+
+echo 'creating transaction...'
+jq '.actions = input' $TEMP_DIR/permissions.json $TEMP_DIR/proposal-actions.json >$TEMP_DIR/proposal-trasaction.json
+
+echo 'signing transaction...'
+cleos -u $API push transaction $TEMP_DIR/proposal-trasaction.json -p $PROPOSER

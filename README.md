@@ -20,15 +20,16 @@ A shell script utility to update the **active** permissions for the `eden.genesi
 ## Quick Start
 - Install pre-requisites
 - Clone repository
-- Update `current-eden-delegates.json` with current delegate's accounts.
-- Update `new-delegates.json` with newly elected delegate's accounts.
+- Update `./current-eden-delegates.json` with current delegate's accounts.
+- Update `./new-delegates.json` with newly elected delegate's accounts.
+- Update `./token-transfer.json` with desired token transfer parameters.
 - Import and Unlock `cleos` wallet with proposer account keys.
 - Execute `./update-delegates.sh` and enter the account proposing and proposal name.
-- Execute `./token-transfer.sh` *(still not sure how this part works)*
 
 ### Pre-Requisites
 - [Git](https://git-scm.com/)
 - [EOSIO](https://developers.eos.io/welcome/latest/getting-started-guide/local-development-environment/index)
+- [jq](https://stedolan.github.io/jq/)
 
 ## File structure
 ```text title="./eden-delegates-msig"
