@@ -24,6 +24,13 @@
 		  },
 		  {
 			 "permission":{
+				"actor":"genesis.eden",
+				"permission":"eosio.code"
+			 },
+			 "weight":3
+		  },
+		  {
+			 "permission":{
 				"actor":"luckyhahnryu",
 				"permission":"active"
 			 },
@@ -35,13 +42,6 @@
 				"permission":"active"
 			 },
 			 "weight":1
-		  },
-		  {
-			 "permission":{
-				"actor":"genesis.eden",
-				"permission":"eosio.code"
-			 },
-			 "weight":3
 		  }
 	   ],
 	   "waits":[
