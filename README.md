@@ -1,4 +1,4 @@
-# Multi-Sig Proposal to set Eden Delegate's Permissions 
+# Multi-Sig Proposal to set Eden Delegate's Permissions
 <p align="center">
 	<a href="https://git.io/col">
 		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
@@ -21,8 +21,7 @@ A shell script utility to update the **active** permissions for the `eden.genesi
 - Install pre-requisites
 - Clone repository
 - Update `./current-eden-delegates.json` with current delegate's accounts.
-- Update `./new-delegates.json` with newly elected delegate's accounts.
-- Update `./token-transfer.json` with desired token transfer parameters.
+- Update `./new-delegates.json` with newly elected delegate's accounts (must be in alphabet order (1-5, a-z)).
 - Import and Unlock `cleos` wallet with proposer account keys.
 - Execute `./update-delegates.sh` and enter the account proposing and proposal name.
 
@@ -34,11 +33,10 @@ A shell script utility to update the **active** permissions for the `eden.genesi
 ## File structure
 ```text title="./eden-delegates-msig"
 /
-├── current-eden-delegates.json ..... JSON containing outgoing chief delegates 
+├── current-eden-delegates.json ..... JSON containing outgoing chief delegates
 ├── new-delegates.json .............. JSON containing new chief delegates
 ├── update-delegates.sh ............. Shell Script to execute multi-signature proposal
-├── token-transfer.sh ............... Token Transfer transaction
-├── LICENSE ......................... Open Source License 
+├── LICENSE ......................... Open Source License
 └── README.md ....................... This Readme File
 ```
 

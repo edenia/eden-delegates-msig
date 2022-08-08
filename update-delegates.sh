@@ -21,17 +21,13 @@ read -p "You ($PROPOSER) are creating a proposal called $PROPOSAL to udpate gene
 echo 'creating updateauth action...'
 cleos -u $API multisig propose $PROPOSAL current-eden-delegates.json -x "3600" -s -d -j \
 '[
-    {"actor": "geneis.eden", "permission": "active"}
+    {"actor": "genesis.eden", "permission": "active"}
 ]' \
 eosio updateauth new-delegates.json -s -d -j -p $PROPOSER > $TEMP_DIR/permissions.json
 
-# Create token transfer action
-echo 'create token transfer action...'
-cleos -u $API push action eosio.token transfer token-transfer.json -s -d -j > $TEMP_DIR/token-transfer.json
-
-# Merge permissions and token transfer actions into a single transaction
+# Get required data from permission action
 echo 'meging actions...'
-jq -s '[.[].actions[]]' $TEMP_DIR/token-transfer.json $TEMP_DIR/permissions.json >$TEMP_DIR/proposal-actions.json
+jq -s '[.[].actions[]]' $TEMP_DIR/permissions.json >$TEMP_DIR/proposal-actions.json
 
 echo 'creating transaction...'
 jq '.actions = input' $TEMP_DIR/permissions.json $TEMP_DIR/proposal-actions.json >$TEMP_DIR/proposal-trasaction.json
