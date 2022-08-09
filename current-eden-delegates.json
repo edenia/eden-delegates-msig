@@ -1,10 +1,7 @@
 [
-    {"actor": "doingitright", "permission": "active"},
-    {"actor": "eden.gm", "permission": "active"},
-    {"actor": "mikemanfredi", "permission": "active"},
-    {"actor": "sparkysparks", "permission": "active"},
-    {"actor": "toddbfleming", "permission": "active"},
-    {"actor": "dlarimer.gm", "permission": "active"},
-    {"actor": "eosio.grants", "permission": "active"},
-    {"actor": "doingitright", "permission": "active"}
+    {"actor": "brockpierce1", "permission": "active"},
+    {"actor": "bywire.com", "permission": "active"},
+    {"actor": "chkmacdonald", "permission": "active"},
+    {"actor": "costaricamae", "permission": "active"},
+    {"actor": "gracielau.gm", "permission": "active"}
 ]
