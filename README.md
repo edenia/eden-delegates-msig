@@ -1,18 +1,17 @@
 # Multi-Sig Proposal to set Eden Delegate's Permissions
-<p align="center">
-	<a href="https://git.io/col">
-		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
+
+<div align="center">
+	<a href="https://edenia.com">
+		<img src="https://raw.githubusercontent.com/edenia/.github/master/.github/workflows/images/edenia-logo.png" width="300" alt="Edenia Logo">
 	</a>
-	<a href="https://twitter.com/intent/follow?screen_name=eoscostarica">
-		<img src="https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter" alt="follow on Twitter">
-	</a>
-	<a href="#">
-		<img src="https://img.shields.io/github/license/eoscostarica/eden-delegates-msig" alt="MIT">
-	</a>
-	<a href="#">
-    <img src="https://img.shields.io/github/forks/eoscostarica/eden-delegates-msig?style=social" alt="Forks">
-    </a>
-</p>
+
+![](https://img.shields.io/github/license/edenia/eden-delegates-msig) 
+![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) 
+![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg) 
+![](https://img.shields.io/twitter/follow/edeniaWeb3.svg?style=social&logo=twitter) 
+![](https://img.shields.io/github/forks/edenia/eden-delegates-msig?style=social)
+
+</div>
 
 ## Description
 A shell script utility to update the **active** permissions for the `eden.genesis` account with newly elected delegates accounts.
@@ -51,15 +50,17 @@ If you want to contribute to this repository, please follow the steps below:
 
 Read the EOS Costa Rica open source [contribution guidelines](https://guide.eoscostarica.io/docs/open-source-guidelines/) for more information on scheduling conventions.
 
-If you find any bugs, please report them by opening an issue at [this link](https://github.com/eoscostarica/eden-delegates-msig/issues).
+If you find any bugs, please report them by opening an issue at [this link](https://github.com/edenia/eden-delegates-msig/issues).
 
+## About Edenia
 
-## About EOS Costa Rica
-<p align="center">
-    <img src="https://raw.githubusercontent.com/eoscostarica/design-assets/master/logos/eosCR/fullColor-horizontal-transparent-white.png" width="400" >
-</p>
-<br>
+<div align="center">
 
-EOS Costa Rica is an independently-owned, self-funded, bare-metal Genesis block producer that provides stable and secure infrastructure for EOSIO blockchains. We support open source software for our community while offering enterprise solutions and custom smart contract development for our clients.
+<a href="https://edenia.com">
+	<img width="300" alt="Edenia Logo" src="https://raw.githubusercontent.com/edenia/.github/master/.github/workflows/images/edenia-logo.png"></img>
+</a>
 
-[eoscostarica.io](https://eoscostarica.io/)
+[![Twitter](https://img.shields.io/twitter/follow/EdeniaWeb3?style=for-the-badge)](https://twitter.com/EdeniaWeb3)
+[![Discord](https://img.shields.io/discord/946500573677625344?color=black&label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/YeGcF6QwhP)
+
+</div>
